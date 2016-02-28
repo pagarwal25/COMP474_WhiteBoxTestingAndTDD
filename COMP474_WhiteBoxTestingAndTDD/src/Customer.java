@@ -9,6 +9,7 @@ public class Customer {
 	
 	public boolean isTaxExempt(){
 		
+		//check on this condition
 		if(cutomerTaxExempted == true){
 						
 			return true;
