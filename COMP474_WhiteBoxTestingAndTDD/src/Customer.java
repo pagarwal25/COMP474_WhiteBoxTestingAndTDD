@@ -1,13 +1,21 @@
 
 public class Customer {
 	 
-	boolean cutomerTaxExempt = false;
+	boolean cutomerTaxExempted;
+	
+	Customer(boolean exempt){
+		cutomerTaxExempted = exempt;
+	}
 	
 	public boolean isTaxExempt(){
 		
-		cutomerTaxExempt = true;
+		if(cutomerTaxExempted == true){
+						
+			return true;
+		}
 		
-		return cutomerTaxExempt;
+		return false;
+		
 	}
 
 }
